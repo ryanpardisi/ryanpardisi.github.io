@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url("./static/fonts/ttfUbuntu/Ubuntu-Regular.ttf");
+    weight:400; 
+    stretch:100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+body, html{
+    position: relative;
+    background-color: #191919;
+}
+
+.body-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    left: 0;
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid #b3b3b3;
+    border-top: 1px solid #b3b3b3;
+    border-bottom: 1px solid #b3b3b3;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position:fixed;
+}
+
+@keyframes border_rgb {
+    0% {border: 3px solid rgb(255, 0, 0);}
+    10% {border: 3px solid rgb(0, 255, 0);}
+    20% {border: 3px solid rgb(0, 0, 255);}
+    30% {border: 3px solid rgb(255, 0, 255);}
+    40% {border: 3px solid rgb(255, 255, 0);}
+    50% {border: 3px solid rgb(0, 255, 255);}
+    60% {border: 3px solid rgb(255, 255, 0);}
+    70% {border: 3px solid rgb(255, 0, 255);}
+    80% {border: 3px solid rgb(0, 0, 255);}
+    90% {border: 3px solid rgb(0, 255, 0);}
+    100% {border: 3px solid rgb(255, 0, 0);}  
+}
+
+.profile-picture{
+    border-radius: 90px;
+    width: 150px;
+    height: 150px;
+    background-image: url("01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: border_rgb;
+    animation-duration: 6.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: block;
+}
+
+.profile-title{
+    color: #fafafa;
+    left: 50%;
+    transform: translate(30%, 50%);
+    font-size: 18px;
+}
