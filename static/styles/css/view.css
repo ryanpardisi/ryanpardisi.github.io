@@ -38,6 +38,7 @@ body, html{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position:fixed;
+    box-shadow: 4px 0 4px 4px #414141;
 }
 
 @keyframes border_rgb {
