@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px) 
+{
+    body, html{
+        background-position: -100px;
+    }
+    .profile{
+        width: 90%;
+    }
+
+    button{
+        width: 200px;
+    }
+}

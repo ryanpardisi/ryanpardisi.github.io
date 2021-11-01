@@ -1,0 +1,70 @@
+:root{
+    --dicord-icon: url("../../images/ico/discord.ico");
+    --facebook-icon: url("../../images/ico/facebook.ico");
+    --github-icon: url("../../images/ico/github.ico");
+    --instagram-icon: url("../../images/ico/instagram.ico");
+    --twitter-icon: url("../../images/ico/twitter.ico");
+    --telegram-icon: url("../../images/ico/telegram.ico");
+}
+
+.links-body{
+    top: 45%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.links{
+    top: 50%;
+    left: 50%;
+    width: 99%;
+    height: 99%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+button{
+    width: 90%;
+    height: 9%;
+    border-radius: 2pc;
+    top: 20%;
+    left: 50%;
+    position: relative;
+    display: table;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color:rgba(37, 37, 37, 0.7);
+    border: 2px solid #797979;
+    margin-top: 10px;
+    color: #afafaf;
+    font-size: medium;
+}
+
+@keyframes ActiveButton {
+    0%{background-position-x: 10px;}
+    100%{background-position-x: 1920px;}
+}
+
+button:active:hover{
+    background-image: linear-gradient(30deg, rgba(37, 37, 37, 0.7), rgba(63, 63, 63, 0.7));
+    animation-name: ActiveButton;
+    animation-duration: 7.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.aico{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    float: left;
+}
+
+.btntext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
